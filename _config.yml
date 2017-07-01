@@ -48,7 +48,7 @@ excerpt_separator: "<!--more-->"
 # Serving
 detach:  false
 port:    4000
-host:    127.0.0.1
+host:    glone008.github.io
 baseurl: "/" # does not include hostname
 url: "http://glone.me" # the base hostname & protocol for your site
 
