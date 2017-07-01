@@ -1,0 +1,93 @@
+# Site settings
+title: 思想狂人
+subtitle: 还没想好
+email: yangxiongnan@gmail.com
+lang: zh-CN # for html lang
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+keywords: "技术博客, 技术管理, linux,hadoop,java,php"
+favicon: http://ibrother.qiniudn.com/favicon.ico
+highlighting-style: default
+branch: master
+
+# Where things are
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts_dir:     ./_layouts
+data_dir: ./_data
+collections: null
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      [vendor]
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      true
+unpublished: false
+
+# Plugins
+whitelist: []
+plugins:      ["jekyll-mentions", "jemoji", "jekyll-redirect-from"]
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "<!--more-->"
+
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "/glone" # does not include hostname
+url: "http://glone.github.io" # the base hostname & protocol for your site
+
+# Outputting
+permalink:     date
+paginate: 6
+paginate_path: /page:num
+timezone:      Asia/Shanghai
+
+quiet:    false
+defaults: []
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+#  auto_ids:       true
+#  footnote_nr:    1
+#  entity_output:  as_char
+#  toc_levels:     1..6
+#  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input: GFM
+#  syntax_highlighter: rouge
+  hard_wrap: false
+#  enable_coderay: false
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
+
+
+
+sass:
+    sass_dir: _sass
+    style: :compressed
